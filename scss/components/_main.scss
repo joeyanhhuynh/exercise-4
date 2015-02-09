@@ -1,2 +1,87 @@
 /* Scss Document */
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.toolBar {
+  width: 100%;
+  height: 50px;
+  background-color: $light-purple;
+  clear: both;
+  border-bottom: 2px solid $dark-purle;
+  .toolWrap {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+
+    nav {
+      padding: 0px;
+      margin-right: 20px;
+      float: right;
+      font-size: 18px;
+      font-family: arial;
+      ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+        ul {
+          display: none;
+          position: absolute;
+          background-color: #ccc;
+          padding: 0;
+          top: 100%;
+          border-radius: 0px;
+          li {
+            float: none;
+            position: relative;
+          }
+          ul {
+            position: absolute;
+            right: 100%; /*** switch to left to change position of nested menus ***/
+            top: 0;
+          }
+        }
+
+        &:after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+        &:after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+        li {
+          float: left;
+          a {
+            display: block;
+            height: 50px;
+            padding: 15px 20px 0px;
+            color: white;
+            text-decoration: none;
+          }
+          &:hover {
+            background-color: $dark-purle;
+            a {
+              color: #fff;
+
+            }
+          }
+
+        }
+      }
+      li {
+        &:hover > ul {
+          display: block;
+        }
+      }
+    }
+
+  }
+}

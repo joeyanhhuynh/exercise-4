@@ -1,3 +1,74 @@
-@charset "UTF-8";
-/* CSS Document */
+/* Scss Document */
+/* Scss Document */
+/* Scss Document */
+/* Scss Document */
+body {
+  margin: 0px;
+  padding: 0px; }
+
+.toolBar {
+  width: 100%;
+  height: 50px;
+  background-color: #BF16F9;
+  clear: both;
+  border-bottom: 2px solid #76009E; }
+  .toolBar .toolWrap {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 50px; }
+    .toolBar .toolWrap nav {
+      padding: 0px;
+      margin-right: 20px;
+      float: right;
+      font-size: 18px;
+      font-family: arial; }
+      .toolBar .toolWrap nav ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        position: relative;
+        display: inline-table; }
+        .toolBar .toolWrap nav ul ul {
+          display: none;
+          position: absolute;
+          background-color: #ccc;
+          padding: 0;
+          top: 100%;
+          border-radius: 0px; }
+          .toolBar .toolWrap nav ul ul li {
+            float: none;
+            position: relative; }
+          .toolBar .toolWrap nav ul ul ul {
+            position: absolute;
+            right: 100%;
+            /*** switch to left to change position of nested menus ***/
+            top: 0; }
+        .toolBar .toolWrap nav ul:after {
+          content: "";
+          clear: both;
+          display: block; }
+        .toolBar .toolWrap nav ul:after {
+          content: "";
+          clear: both;
+          display: block; }
+        .toolBar .toolWrap nav ul li {
+          float: left; }
+          .toolBar .toolWrap nav ul li a {
+            display: block;
+            height: 50px;
+            padding: 15px 20px 0px;
+            color: white;
+            text-decoration: none; }
+          .toolBar .toolWrap nav ul li:hover {
+            background-color: #76009E; }
+            .toolBar .toolWrap nav ul li:hover a {
+              color: #fff; }
+      .toolBar .toolWrap nav li:hover > ul {
+        display: block; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 

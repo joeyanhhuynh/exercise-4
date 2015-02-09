@@ -1,2 +1,15 @@
 /* Scss Document */
 
+// Import mixins, variables, and other modules, usually compass related
+@import "base";
+@import "mixins";
+
+// Component rules
+@import "components/main";
+
+// Vendor
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
